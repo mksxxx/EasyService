@@ -26,25 +26,24 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 ## 🔧 Configuração do Backend
 
-1. Acesse a pasta do backend:
-   Instale as dependências:
+1. Acesse a pasta do backend: <br>
+   Instale as dependências:  <br>
    npm install
    
 ---
   
-2. Configure o arquivo .env na raiz da pasta backend com as suas credenciais:
-      **Snippet de código**
-   **----------------------**
-  DB_HOST=localhost
-  DB_USER=seu_usuario
-  DB_PASSWORD=sua_senha
-  DB_NAME=EasyService
-  DB_PORT=5432
-  JWT_SECRET=sua_chave_secreta
-   **----------------------**
+2. Configure o arquivo .env na raiz da pasta backend com as suas credenciais: <br> <br>
+**Snippet de código** <br>
+  - DB_HOST=localhost <br>
+  - DB_USER=seu_usuario <br>
+  - DB_PASSWORD=sua_senha <br>
+  - DB_NAME=EasyService <br>
+  - DB_PORT=5432 <br>
+  - JWT_SECRET=sua_chave_secreta <br>
 
 ---
-3. Execute as migrations no seu banco de dados para criar as tabelas.
+3. Execute as migrations no seu banco de dados para criar as tabelas: <br>
+  db-migrate up
 ---
-4. Inicie o servidor:
+4. Inicie o servidor: <br>
    npm run dev ou nodemon
