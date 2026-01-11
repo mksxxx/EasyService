@@ -8,6 +8,7 @@ async function loginUser(email) {
     
     // Retorna o usuário encontrado ou null
     return result.rows[0]; 
+    //teste
 }
 
 export default { loginUser };
