@@ -1,0 +1,13 @@
+CREATE TABLE USUARIOS(
+    ID SERIAL PRIMARY KEY,
+    NOME VARCHAR(100) NOT NULL,
+    EMAIL VARCHAR(100) NOT NULL UNIQUE,
+    SENHA VARCHAR(100) NOT NULL,
+    DATA_CRIACAO TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+COMMENT ON TABLE USUARIOS IS 'Tabela para armazenar cadastros de usuários do sistema.';
+COMMENT ON COLUMN USUARIOS.NOME IS 'Nome completo do usuário.'; 
+COMMENT ON COLUMN USUARIOS.EMAIL IS 'Endereço de e-mail único do usuário.';
+COMMENT ON COLUMN USUARIOS.SENHA IS 'Senha criptografada do usuário.';
+COMMENT ON COLUMN USUARIOS.DATA_CRIACAO IS 'Data e hora em que o usuário foi criado.';
